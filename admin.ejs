@@ -1,0 +1,19 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Admin Page</title>
+</head>
+<body>
+  <h1>Visitor Logs</h1>
+  <ul>
+    <% visitors.forEach(visitor => { %>
+      <li>
+        <strong>IP:</strong> <%= visitor.ip %> |
+        <strong>Device:</strong> <%= visitor.userAgent %> |
+        <strong>Time:</strong> <%= visitor.time %>
+      </li>
+    <% }) %>
+  </ul>
+</body>
+</html>
